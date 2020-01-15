@@ -29,7 +29,7 @@ const TodoHeadBlock = styled.div `
 
 
 
-function TodoHead ({ children }) {
+function TodoHead () {
     return (
         <TodoHeadBlock>
             <h1>2020년 1월 15일</h1>
