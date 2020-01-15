@@ -17,4 +17,10 @@
    
     4. component 안에 사용할 컴포넌트 파일 만들기
         - TodoTemplate
-        - TodoHead 
+        - TodoHead ..
+  
+    5. Context API 활용한 상태관리 
+        - 리듀서 만들기
+        - create, toggle, remove 액션 3가지
+        - context 따로따로 만드는게 편하다다
+        - custom Hook
