@@ -6,23 +6,21 @@ import TodoList from './components/TodoList';
 import TodoCreate from './components/TodoCreate';
 import { TodoProvider } from './TodoContext';
 
-
-const GlobalStyle = createGlobalStyle `
+const GlobalStyle = createGlobalStyle`
   body {
-    background : #ced4da;
+    background: #e9ecef
   }
 `;
-
 function App() {
   return (
-    <>
+    <TodoProvider>
       <GlobalStyle />
       <TodoTemplate>
-        <TodoHead/>
-         <TodoList/>
-        <TodoCreate/>
-     </TodoTemplate>
-    </>
+        <TodoHead />
+        <TodoList />
+        <TodoCreate />
+      </TodoTemplate>
+    </TodoProvider>
   );
 }
 
