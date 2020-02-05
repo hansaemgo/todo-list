@@ -84,6 +84,7 @@ function TodoCreate() {
 
   const onToggle = () => setOpen(!open);
   const onChange = e => setValue(e.target.value);
+  // 새로고침 안되게하는 방법 - onSubmit방지
   const onSubmit = e => {
     e.preventDefault();
     dispatch({
@@ -121,3 +122,5 @@ function TodoCreate() {
 }
 
 export default React.memo(TodoCreate);
+
+//moemo - 불필요한 렌더링 막기
