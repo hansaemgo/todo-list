@@ -13,21 +13,25 @@
         - 할 일 완료되었을 때, 좌측에 체크표시 텍스트색상 옅어짐.
         - 마우스호버 휴지통 아이콘, 클릭시 항목 삭제
     5. TodoCreate : 새로운 할일을 등록 할 수 있게 하는 컴포넌트 
-    
-    <!-- 5. 글로벌 스타일
-        - 설치 : yarn add styled-components react-icons
-        - styled-components에서 createGlobalStyle 불러오기 
-        - const GlobalStyle : 컴포넌트 만들기 
-        - 넣고싶은 css 코드 넣기
-        - 렌더링 <GlobalStyle />
-  
-    6. src / component 폴더생성
+
+### 02. 글로벌 설정하기 ex) body background
+    1. 글로벌 스타일 : import { createGlobalStyle } from 'styled-components';
+    2. creageGlobalStyle 함수를 사용하여 컴포넌트 생성후 렌더링 
+        - const GlobalStyle = createGlobalStyle` css 코드  넣어준다 `;
+    3. App.js <GlobalStyle></GlobalStyle> 렌더링
+
+### 03. TodoTemplate 컴포넌트 만들기
+    1. src / components 폴더 아래 TodoTemplate 컴포넌트 생성
+    2. import styled from 'styled-components'; 
+    3. const TodoTemplateBlock = styled.div` css 코드 넣어준다 `;
+    4. TodoTemplateBlock  스타일 완성
+    5. TodoTeplate {children} props가져와서 TodoTemplateBlock 내부에다 {children} 렌더링
+    6. App.js 에 TodoTemplate 렌더링
+
+
    
-    7. component 안에 사용할 컴포넌트 파일 만들기
-        - TodoTemplate
-        - TodoHead ..
   
-    8. Context API 활용한 상태관리 
+    7. Context API 활용한 상태관리 
         - props에서 필요한 함수와 구조를 내려주면 App 컴포넌트에서 모든상태지니고 다 내려받는 형태
         - 리듀서 만들기 {useReducer} - 상태관리 배열상태로
         - create, toggle, remove 액션 3가지
