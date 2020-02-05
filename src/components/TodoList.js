@@ -10,6 +10,9 @@ const TodoListBlock = styled.div`
 `;
 
 function TodoList() {
+	// const state = useTodoState();
+	// const dispatch = useTodoDispatch();
+
 	return (
 		<TodoListBlock>
 			<TodoItem text="프로젝트 생성하기" done={true} />
