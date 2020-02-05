@@ -29,9 +29,13 @@
     6. App.js 에 TodoTemplate 렌더링
 
 
+### 04. TodoHead 컴포넌트 만들기
+     1. src / components 폴더 아래 TodoHead 컴포넌트 생성
+     2. TodoHeadBlock styled.div로 css 설정후 연도, 요일 현재 날짜로 넣기
+     3. App.js 렌더링
    
   
-    7. Context API 활용한 상태관리 
+    1. Context API 활용한 상태관리 
         - props에서 필요한 함수와 구조를 내려주면 App 컴포넌트에서 모든상태지니고 다 내려받는 형태
         - 리듀서 만들기 {useReducer} - 상태관리 배열상태로
         - create, toggle, remove 액션 3가지
