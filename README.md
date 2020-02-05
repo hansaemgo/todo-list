@@ -39,10 +39,16 @@
     2. 년도, 요일, 남은 할일 수 밑으로 공간 모두 선택 
         - flex :1 (자신이 차지할 수 있는 모든 영역 차지)
 
-
-
-
-
+### 06. TodoItem 컴포넌트 만들기
+    1. component - TodoItem.js
+    2. 사용할 아이콘 불러오기 / import { MdDone, MdDelete } from 'react-icons/md';
+    3. 휴지통(Remove), 체크박스(CheckCircle), 항목(Text), 전체 항목공통(TodoItemBlock)
+    4. Component Selector : &:hover { ${선택자 { 호버시 변경될 CSS }}})
+   
+### 07. TodoCreate 컴포넌트 만들기
+    1. component - TodoCreate.js
+    2. react-icons의 MdAdd 사용 +
+    3. MdAdd 버튼 translate(-50%, 50%)로 해당 버튼크기의 반만큼 움직여 정가운데 놓음
 
 
 
@@ -65,7 +71,7 @@
 
 
   
-    3. Context API 활용한 상태관리 
+    4. Context API 활용한 상태관리 
         - props에서 필요한 함수와 구조를 내려주면 App 컴포넌트에서 모든상태지니고 다 내려받는 형태
         - 리듀서 만들기 {useReducer} - 상태관리 배열상태로
         - create, toggle, remove 액션 3가지
